@@ -81,7 +81,7 @@ align-items: center;}
 margin-left: auto;
 align-items: center;}
 
-.header-contact-item + .header-contact-item {margin-left: 50px;} 
+.header-contact-item + .header-contact-item {margin-right: 50px;} 
 
 
 .nav-list-link:hover, :focus {color: #2196F3;}
@@ -100,7 +100,19 @@ align-items: center;}
     letter-spacing: 0.02em;
     color: #757575;}
 
+ .header-contact-item {display: flex;
+        align-items: center;}
 
+.contact-icon-link {margin-right: 10px;}
+
+.contact-icon {
+    color: #757575;
+}
+
+.contact-icon-link .contact-icon:hover,
+.contact-icon-link .contact-icon:focus {
+    color: #2196F3;
+}
 
 /*--------Main------------- */
 
@@ -144,6 +156,8 @@ justify-content:center;
 
 .btn-list-item:hover,.btn-list-item:focus
  {color: #FFFFFF; background-color: #2196F3; }
+
+
 
 
  /*------------hero----------------*/

@@ -101,16 +101,35 @@ margin-left: auto;}
     color: #2196F3;
 }
 
+.header-contact-item {
+    display: flex;
+    align-items: center;
+}
+
+
 .header-contact-item + .header-contact-item {margin-left: 50px;}
+
+.contact-icon-link {margin-right: 10px;}
+
+.contact-icon {
+    color: #757575;
+}
+
+.contact-icon-link .contact-icon:hover,
+.contact-icon-link .contact-icon:focus {color: #2196F3;}
 
 /*----------Main-----------*/
 
 /*----------Hero-----------*/
 
 .hero  {
- background-color: #2F303A;
 padding-top: 200px;
 padding-bottom: 200px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+ url(../images/banner.jpg);
+background-size: cover;
+max-width: 1600px;
+background-color: #2F303A;
 }
 
 .hero-title {
@@ -145,6 +164,7 @@ padding-bottom: 200px;
     min-width: 200px;
     height: 50px;
 }
+
 
 /*-------------------content--------------------*/
 
@@ -191,6 +211,51 @@ padding-bottom: 47px;}
     letter-spacing: 0.03em;
     color: var(--text-color)
 }
+
+.antena::before {content: "";
+display: block;
+height: 120px;
+background-image: url(../images/Antena.svg);
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid transparent;
+padding: 25px 100px 25px 100px;
+background-color: #F5F4FA;
+margin-bottom: 30px;}
+
+.clock::before {content: "";
+    display: block;
+    height: 120px;
+    background-image: url(../images/clock\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+    padding: 25px 100px 25px 100px;
+     background-color: #F5F4FA;
+    margin-bottom: 30px;}
+
+.diagram::before {
+        content: "";
+        display: block;
+        height: 120px;
+        background-image: url(../images/diagram\ 1.svg);
+        background-repeat: no-repeat;
+        background-position: center;border: 1px solid transparent;
+         padding: 25px 100px 25px 100px;
+         background-color: #F5F4FA;
+         margin-bottom: 30px;
+    }
+
+.astronavt::before {content: "";
+    display: block;
+    height: 120px;
+    background-image: url(../images/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+    padding: 25px 100px 25px 100px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;}
 
 
 /*---------cards---------*/
@@ -259,7 +324,61 @@ padding-bottom: 30px;}
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    margin-bottom: 15px;
 }
+
+.masters-soc-list {display: flex;
+justify-content: center;}
+
+.masters-soc-item {width: 44px; height: 44px;
+margin-right: 10px;}
+
+
+.masters-soc-item:last-child {margin-right: 0;}
+
+.masters-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.masters-soc-link:hover, 
+.masters-soc-link:focus {background-color: #2196F3;}
+
+
+.masters-list-icons {fill: #AFB1B8;}
+
+.masters-soc-link:hover .masters-list-icons,
+.masters-soc-link:focus .masters-list-icons {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+/*------------client----------------*/
+
+.client {padding-top: 94px;
+    padding-bottom: 94px;}
+
+
+.client-title {font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+margin-bottom: 50px;}
+
+.client-list {display: flex;
+justify-content: space-between;}
+
+
 
 /*--------------footer-------------*/
 

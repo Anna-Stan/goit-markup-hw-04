@@ -97,11 +97,9 @@ margin-left: auto;}
     color: #757575;
 }
 
-.header-contact-link:hover {
-    color: #2196F3;
-}
 
-.header-contact-item {
+
+.header-contact-link {
     display: flex;
     align-items: center;
 }
@@ -109,14 +107,22 @@ margin-left: auto;}
 
 .header-contact-item + .header-contact-item {margin-left: 50px;}
 
-.contact-icon-link {margin-right: 10px;}
 
-.contact-icon {
-    fill: #757575;
+.mail-logo::before {content: "";
+width: 16px;
+height: 12px;
+background-image: url(/images/meil.svg);
+margin-right: 10px;
+fill: #2196F3;
 }
 
-.contact-icon-link .contact-icon:hover,
-.contact-icon-link .contact-icon:focus {fill: #2196F3;}
+
+
+.header-contact-link:hover, .header-contact-link:focus {
+    color: #2196F3;
+}
+
+
 
 /*----------Main-----------*/
 
@@ -130,6 +136,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 background-size: cover;
 max-width: 1600px;
 background-color: #2F303A;
+background-position: center;
 }
 
 .hero-title {
@@ -231,7 +238,7 @@ margin-bottom: 30px;}
     background-position: center;
     border: 1px solid transparent;
     padding: 25px 100px 25px 100px;
-     background-color: #F5F4FA;
+    background-color: #F5F4FA;
     margin-bottom: 30px;}
 
 .diagram::before {
@@ -380,8 +387,11 @@ margin-bottom: 50px;}
 .client-list {display: flex;
 justify-content: space-between;}
 
-.client-list-item {border: 1px solid #AFB1B8;
-border-radius: 5%;}*
+.client-list-item {
+    border: 1px solid #AFB1B8;
+    border-radius: 5%;
+} 
+
 
 
 .client-list-link {display: block;

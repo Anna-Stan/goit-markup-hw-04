@@ -107,20 +107,12 @@ margin-left: auto;}
 
 .header-contact-item + .header-contact-item {margin-left: 50px;}
 
-
-.mail-logo::before {content: "";
-width: 16px;
-height: 12px;
-background-image: url(/images/meil.svg);
-margin-right: 10px;
-fill: #2196F3;
-}
-
-
-
 .header-contact-link:hover, .header-contact-link:focus {
     color: #2196F3;
 }
+
+.contact-icon {fill: currentColor;
+margin-right: 10px;}
 
 
 

@@ -111,12 +111,12 @@ align-items: center;}
 
 
 .contact-icon {
-    fill: #757575;
+    fill: currentColor;
 }
 
 .header-contact:hover,  .header-contact:focus {color: #2196F3;}
 
-.contact-icon-link .contact-icon:hover,
+/*.contact-icon-link .contact-icon:hover,
 .contact-icon-link .contact-icon:focus {
     fill: #2196F3;
 }
